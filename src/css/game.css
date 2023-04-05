@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    font-family: Mukta-Regular;
+}
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../img/background3.jpg);
+    background-size: cover;
+}
+
+.table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.casilla{
+    width: 167px;
+    height: 167px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/circle.svg);
+    background-size: cover;
+}
+
+.cross{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/cross.svg);
+    background-size: cover;
+}
+
+.star{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/star.svg);
+    background-size: cover;
+}
+
+.star-blue{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/star-blue.svg);
+    background-size: cover;
+}
+
+
+.rocket{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/rocket.svg);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.rocket-blue{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/rocket-blue.svg);
+    background-size: cover;
+}
+
+.robot{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/robot.svg);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.robot-blue{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/robot-blue.svg);
+    background-size: cover;
+}
+
+.disk{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/disk.svg);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.disk-blue{
+    width: 160px;
+    height: 160px;
+    background-image: url(../../img/disk-blue.svg);
+    background-size: cover;
+}
+
+
+.pieza{
+    width: 167px;
+    height: 167px;
+    position: absolute;
+    z-index: 100;
+}
+
+.back img{
+    position: absolute;
+    z-index: 100;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgba(32, 31, 31, 0.567);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+}
+
+#settings img{
+    position: absolute;
+    z-index: 100;
+    margin-left: 1200px;
+    background-color: white;
+    border-radius: 50px;
+    border:  2px solid pink;
+    border-color: pink;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.modal{
+    background-image: url(../../img/background2.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    border:  none;
+    margin-top: 90px !important;
+}
+
+.modal-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size: 30px;
+}
+
+.btn{
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.btn button{
+    font-size: 30px;
+    color: rgb(210, 65, 128);
+    width: 200px;
+    padding: 15px;
+}
+
+#submenu{
+    margin-top: 25px;
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#player1{
+    display: none;
+}
+
+#player2{
+    display: none;
+}
+
+.prueba{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 15px;
+}
+
+.cancel{
+    margin-left: 110px;
+}
+
+.cancel button{
+    font-size: 30px;
+    background-color: rgb(249, 8, 8);
+    border-color: rgba(255, 0, 0, 0.748);
+    color:  #fff;
+    width: 200px;
+    padding: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.cancel button:hover{
+    background-color: rgb(188, 14, 14);
+    border-color: rgba(174, 5, 5, 0.748);
+}
